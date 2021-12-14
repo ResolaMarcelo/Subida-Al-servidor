@@ -1,0 +1,58 @@
+
+
+//VARIABLES
+$color-principal: #007bff;
+$tamaño-font: 25px;
+
+//ESTILOS
+
+p{
+    color: $color-principal;
+}
+
+.navbar-brand   {
+ width: 3%;
+}
+
+// .container-fluid    {
+//     font-size: 150%;
+// }
+
+
+
+
+//FOOTER
+
+footer  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.redes-container    {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container  ul li     {
+    display: inline-block;
+    margin: 0 5px;
+    width: $tamaño-font * 2;
+    text-align: center;
+}
+
+.redes-container a  {
+    display: block;
+}
+
+
+//BUCLE
+
+@for $i from 1 through 3    {
+    .container-fluid  {
+         font-size: 50% * $i;
+    }
+}
